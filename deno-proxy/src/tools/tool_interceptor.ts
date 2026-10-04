@@ -883,7 +883,7 @@ IMPORTANT: Do NOT call web_search again. The search has already been performed a
     });
 
     // 璁剧疆蹇冭烦瀹氭椂鍣
-    let keepAliveInterval: number | undefined;
+    let keepAliveInterval:ReturnType<typeof setInterval>|undefined;
     if (keepAliveCallback) {
       keepAliveInterval = setInterval(() => {
         keepAliveCallback();
