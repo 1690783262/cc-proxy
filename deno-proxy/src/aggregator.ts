@@ -1,6 +1,6 @@
 export class TextAggregator {
   private buffer = "";
-  private timer?: number;
+  private timer?: ReturnType<typeof setYimeout>;
 
   constructor(
     private readonly intervalMs: number,
